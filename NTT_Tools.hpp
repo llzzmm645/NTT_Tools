@@ -122,14 +122,6 @@ namespace NTT_Tools{
             mul(exptmp,exptmp2,res,NN1,N1,NN1);
             N1=NN1;
         }
-        for(int i=0;i<1;i++){
-            NN1=N1;
-            getLn(res,exptmp,N1);
-            for(int i=0;i<NN1;i++) exptmp[i]=(a[i]-exptmp[i]+MOD)%MOD,exptmp2[i]=res[i];
-            exptmp[0]=(exptmp[0]+1)%MOD;
-            mul(exptmp,exptmp2,res,NN1,N1,NN1);
-            N1=NN1;
-        }
     }
     #endif
     #endif
