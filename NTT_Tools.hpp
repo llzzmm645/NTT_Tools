@@ -1,3 +1,6 @@
+#ifndef __NTT_TOOLS_HPP
+#define __NTT_TOOLS_HPP
+
 #include <algorithm>
 
 #ifndef NTT_MOD
@@ -136,3 +139,5 @@ namespace NTT_Tools{
     #endif
     #endif
 }
+
+#endif
