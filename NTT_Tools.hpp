@@ -1,5 +1,13 @@
 #include <algorithm>
 
+#ifndef NTT_MOD
+#define NTT_MOD 998244353
+#endif
+
+#ifndef NTT_MAXN
+#define NTT_MAXN 800005
+#endif
+
 // define start
 #define NTT_MUL
 #define NTT_INV
@@ -11,8 +19,8 @@
 namespace NTT_Tools{
     using namespace std;
 
-    const int MOD=998244353,INV2=(MOD+1)/2;
-    const int MAXN=800005;
+    const int MOD=NTT_MOD,INV2=(MOD+1)/2;
+    const int MAXN=NTT_MAXN;
     int c[MAXN];
     int ksm(int p,int q){
         int r=1;
